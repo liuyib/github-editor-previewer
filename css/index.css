@@ -1,0 +1,28 @@
+.gh-editor-previewer-trigger {
+  display: inline-flex;
+  align-items: center;
+  height: 28px;
+  margin: 0 8px;
+  cursor: pointer;
+}
+
+.container-preview:not(.show-code) .commit-create.gh-editor-previewer-editor {
+  display: block !important;
+  float: left;
+  width: 50%;
+}
+
+.gh-editor-previewer-previewer {
+  display: block !important;
+  overflow: auto;
+  float: left;
+  width: 50%;
+  height: 646px;
+}
+
+.container-preview .tabnav-tabs .tabnav-tab {
+  visibility: hidden !important;
+  width: 0 !important;
+  margin: 0 !important;
+  padding: 0 !important;
+}
