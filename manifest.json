@@ -1,0 +1,24 @@
+{
+  "manifest_version": 3,
+  "version": "0.0.1",
+  "name": "__MSG_ext_name__",
+  "description": "__MSG_ext_description__",
+  "default_locale": "zh_CN",
+  "action": {
+    "default_icon": "icons/logo-16.png"
+  },
+  "icons": {
+    "16": "icons/logo-16.png",
+    "32": "icons/logo-32.png",
+    "48": "icons/logo-48.png",
+    "128": "icons/logo-128.png"
+  },
+  "content_scripts": [
+    {
+      "matches": ["*://github.com/*"],
+      "js": ["libs/lodash.debounce.min.js", "js/content.js"],
+      "css": ["css/index.css"],
+      "run_at": "document_end"
+    }
+  ]
+}
